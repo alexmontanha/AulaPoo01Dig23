@@ -8,8 +8,13 @@
         Doutorado
     }
 
-    public class Professor: Pessoa
+    public abstract class Professor: Pessoa
     {
         public Titulacao Titulo { get; set; }
+
+        public virtual double CalcularSalario()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
